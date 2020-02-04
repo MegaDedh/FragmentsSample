@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/lesson106_btnFind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLesson106"
+        android:text="@string/find">
+    </Button>
+    <fragment
+        android:id="@+id/lesson106_fragment1"
+        android:name="ru.asshands.softwire.fragmentssample.lesson106.Lesson106Fragment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:layout="@layout/lesson106_fragment1">
+    </fragment>
+    <FrameLayout
+        android:id="@+id/lesson106_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </FrameLayout>
+</LinearLayout>
